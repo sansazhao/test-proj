@@ -1,12 +1,19 @@
 ```python
+threshold = 100
+table = []
+for i in range(256):
+    if i < threshold:
+        table.append(0)
+    else:
+        table.append(1)
 
+if __name__ == '__main__':
     origin_pic = Image.open(origin)
     # convert the original image to a gray image
     gray = origin_pic.convert('L')
     # convert a gray image to a binary image
     bin = gray.point(table, '1')
     bin.save(p_bin)
-
 ```
 
 ```python
