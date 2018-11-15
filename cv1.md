@@ -67,3 +67,22 @@ def erosion_bin(img, kernel, path):
             else:
                 res[r, c] = WHITE
 ```
+
+```python
+kernel = np.array([[1, 1, 1],
+                   [1, 1, 1],
+                   [1, 1, 1]])
+
+kernel1 = np.array([[0, 1, 0],
+                    [1, 1, 1],
+                    [0, 1, 0]])
+
+kernel2 = np.array([[0, 0, 1, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [1, 1, 1, 1, 1],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 1, 0, 0]])
+
+kernel3 = np.ones((5, 5))
+```
+
