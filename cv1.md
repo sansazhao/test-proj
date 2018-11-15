@@ -1,4 +1,9 @@
 ```python
+
+BLACK = 0
+WHITE = 255
+
+
 threshold = 100
 table = []
 for i in range(256):
